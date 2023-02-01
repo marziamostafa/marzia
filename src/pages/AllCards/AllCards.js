@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData, useRouteLoaderData } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 import Card from '../Card/Card';
 
 const AllCards = () => {
@@ -10,8 +10,9 @@ const AllCards = () => {
     return (
         <div className='px-10 '>
             {
-                allData.map(data => <Card
+                allData?.map(data => <Card
                     key={id}
+                    allData={allData}
                 ></Card>)
             }
         </div>
