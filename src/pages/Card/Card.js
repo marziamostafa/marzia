@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Card = ({ allData }) => {
+const Card = ({ data }) => {
 
-    console.log(allData)
+    console.log(data)
     return (
         <div className="card w-full bg-base-100 shadow-xl my-6 pr-4">
             <div className='flex items-center'>

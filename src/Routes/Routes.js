@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom"
 import Main from "../layout/Main";
 import AllCards from "../pages/AllCards/AllCards";
+import Home from "../pages/Home/Home";
 
 const router = createBrowserRouter([
     {
@@ -9,10 +10,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                loader: async () => {
-                    return fetch('https://jsonplaceholder.typicode.com/users')
-                },
-                element: <AllCards></AllCards>,
+                element: <Home></Home>
             }
         ]
     }
