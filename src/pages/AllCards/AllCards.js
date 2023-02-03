@@ -23,9 +23,9 @@ const AllCards = () => {
 
     const perPage = 4;
 
-    console.log(page)
-    console.log(size)
-    console.log(limitData)
+    // console.log(page)
+    // console.log(size)
+    // console.log(limitData)
 
 
     return (
