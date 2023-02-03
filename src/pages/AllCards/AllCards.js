@@ -21,7 +21,7 @@ const AllCards = () => {
     // const limitData = allData.skip(page * size).limit(size).toArray()
     const limitData = allData.slice(count * size, page * size)
 
-    const perPage = 4;
+
 
     // console.log(page)
     // console.log(size)
@@ -29,7 +29,7 @@ const AllCards = () => {
 
 
     return (
-        <div className='lg:px-10 '>
+        <div className='lg:px-10 bg-slate-100'>
             {
                 limitData?.map(data => <Card
                     key={data.id}
@@ -39,7 +39,7 @@ const AllCards = () => {
                 ></Card>)
             }
 
-            <div className="btn-group flex justify-center pagination">
+            <div className="btn-group flex justify-center pagination ">
                 {
                     [...Array(pages).keys()].map(number => <button
                         key={number}

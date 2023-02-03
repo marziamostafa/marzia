@@ -13,21 +13,21 @@ const Card = ({ data }) => {
                             <p className='font-semibold'>{company.name}</p>
                         </div>
                         <div className='lg:w-9'>
-                            <p>Contact:</p>
+                            <p className='font-semibold'>Contact:</p>
                             <p>{name}</p>
                         </div>
                         <div className='lg:w-8 hidden lg:block'>
-                            <p>Street:</p>
+                            <p className='font-semibold'>Street:</p>
                             <p>{address.street}</p>
                         </div>
                         <div className='lg:w-8'>
-                            <p>City:</p>
+                            <p className='font-semibold'>City:</p>
                             <p>{address.city}</p>
                         </div>
                     </div>
                 </div>
-                <div className="card-actions justify-end lg:ml-12">
-                    <button className="btn btn-primary"><Link to={`/details/${id}`}>Details</Link></button>
+                <div className="card-actions justify-end lg:ml-14">
+                    <button className="btn btn-info rounded-3xl"><Link to={`/details/${id}`}>Details</Link></button>
                 </div>
             </div>
         </div>
